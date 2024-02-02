@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://d2cqnk1dv4vlq"]
+
+[ext_resource type="Texture2D" uid="uid://cbfccoul7av7j" path="res://icon.svg" id="1_78t1n"]
+[ext_resource type="Script" path="res://soldier.gd" id="1_gfmg3"]
+[ext_resource type="PackedScene" uid="uid://cl3xoirb21hsc" path="res://soldier_physics.tscn" id="2_4of6i"]
+[ext_resource type="PackedScene" uid="uid://cf4s7y2mawion" path="res://soldier_visual.tscn" id="3_qlenu"]
+
+[node name="Soldier" type="Node2D"]
+script = ExtResource("1_gfmg3")
+soldier_physics = ExtResource("2_4of6i")
+soldier_visual = ExtResource("3_qlenu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.273133, 0.615032, 0.724639, 0.314)
+show_behind_parent = true
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_78t1n")

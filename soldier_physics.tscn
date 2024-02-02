@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cl3xoirb21hsc"]
+
+[ext_resource type="Script" path="res://soldier_physics.gd" id="1_lkj77"]
+[ext_resource type="Texture2D" uid="uid://cbfccoul7av7j" path="res://icon.svg" id="1_nte2r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cpgpk"]
+
+[node name="PhysicSoldier" type="RigidBody2D"]
+gravity_scale = 0.0
+max_contacts_reported = 1
+contact_monitor = true
+script = ExtResource("1_lkj77")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.6, 0.6)
+shape = SubResource("RectangleShape2D_cpgpk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_nte2r")

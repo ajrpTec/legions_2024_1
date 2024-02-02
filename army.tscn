@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://bu1w5713jgtdh"]
+
+[ext_resource type="Script" path="res://army.gd" id="1_i2v1a"]
+[ext_resource type="PackedScene" uid="uid://d2cqnk1dv4vlq" path="res://soldier.tscn" id="2_lcqr2"]
+[ext_resource type="Texture2D" uid="uid://cbfccoul7av7j" path="res://icon.svg" id="3_ifv33"]
+
+[node name="Army" type="Node2D"]
+script = ExtResource("1_i2v1a")
+SoldatScene = ExtResource("2_lcqr2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(0.992902, 0.258625, 0.199863, 1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_ifv33")

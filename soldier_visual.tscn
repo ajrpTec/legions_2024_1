@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cf4s7y2mawion"]
+
+[ext_resource type="Texture2D" uid="uid://cbfccoul7av7j" path="res://icon.svg" id="1_5voq2"]
+[ext_resource type="Script" path="res://soldier_visual.gd" id="1_fvoft"]
+
+[node name="SoldierVisual" type="Node2D"]
+script = ExtResource("1_fvoft")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_5voq2")
