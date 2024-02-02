@@ -1,7 +1,7 @@
 extends RigidBody2D
 class_name SoldierPhysics
 
-signal hit_body
+var kingCode = 0; var armyCode = 0;
 
 func _ready():
 	pass

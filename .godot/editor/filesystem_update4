@@ -1,1 +1,5 @@
 res://main.tscn
+res://soldier.gd
+res://army.gd
+res://soldier.tscn
+res://soldier_physics.tscn

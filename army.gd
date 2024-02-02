@@ -6,13 +6,17 @@ class_name Army
 @export var col = 5;
 @export var user_control = true;
 
+@export var kingCode = 0; @export var armyCode = 0;
+
 var soldiers = []
 
 func _ready():
 	for c in row:
 		for r in col:
 			var s : Node2D = SoldatScene.instantiate();
-			s.position = Vector2( c*15 - row/2*15, r*15 - col/2*15); 
+			s.kingCode = kingCode ; s.armyCode = armyCode; 
+			s.connect("hit_enemy",hitEnemy)
+			s.position = Vector2( c*15 - row/2*15, r*15 - col/2*15);
 			add_child(s);
 			soldiers.append(s);
 			pass
@@ -30,4 +34,10 @@ func _input(event):
 	if Input.is_action_pressed("ui_right"): for s : Soldier in soldiers: s.move(Vector2.RIGHT)
 	if Input.is_action_pressed("ui_up"): 	for s : Soldier in soldiers: s.move(Vector2.UP)
 	if Input.is_action_pressed("ui_down"): 	for s : Soldier in soldiers: s.move(Vector2.DOWN)
+	pass
+
+func hitEnemy(body):
+	print("Army detected collision with enemy!");
+	for s in soldiers:
+		s.soldierBody.linear_damp = 2;
 	pass

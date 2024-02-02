@@ -209,6 +209,8 @@ sources/0 = SubResource("TileSetAtlasSource_40afs")
 
 [node name="Army" parent="." instance=ExtResource("2_7f24q")]
 position = Vector2(-248, -99)
+kingCode = 1
+armyCode = 1
 
 [node name="Army2" parent="." instance=ExtResource("2_7f24q")]
 user_control = false
