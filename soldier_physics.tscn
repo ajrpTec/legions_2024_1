@@ -6,7 +6,6 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cpgpk"]
 
 [node name="PhysicSoldier" type="RigidBody2D"]
-input_pickable = true
 gravity_scale = 0.0
 max_contacts_reported = 1
 contact_monitor = true
