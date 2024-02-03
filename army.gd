@@ -38,7 +38,7 @@ func _input(event):
 	if Input.is_action_pressed("ui_down"): 	for s : Soldier in soldiers: s.move(Vector2.DOWN)
 
 	# beregn vektor fra soldats position til musens position
-	# hvis man trykker på musen, så skal soldaten gå i den retning
+	# hvis man trykker på tasten "a", så skal soldaten gå i den retning
 	if Input.is_action_just_pressed("a"):
 		for s : Soldier in soldiers:
 			var dir =get_global_mouse_position() - s.soldierBody.global_position;
@@ -46,6 +46,7 @@ func _input(event):
 			s.move(dir);
 		pass
 	pass
+
 
 func hitEnemy(colliding_soldier : Soldier, velocity : Vector2):
 	
