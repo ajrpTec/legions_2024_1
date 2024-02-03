@@ -2,13 +2,11 @@ extends Node2D
 
 class_name SoldierVisual
 
-# Called when the node enters the scene tree for the first time.
+var kingCode = 0; var armyCode = 0;
+var color = Color(1,1,1,1)
+
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+	$Sprite2D.modulate = color
 	pass
 	
 func move(direction):

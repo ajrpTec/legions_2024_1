@@ -11,6 +11,7 @@ soldier_physics = ExtResource("2_4of6i")
 soldier_visual = ExtResource("3_qlenu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 modulate = Color(0.273133, 0.615032, 0.724639, 0.314)
 show_behind_parent = true
 scale = Vector2(0.1, 0.1)

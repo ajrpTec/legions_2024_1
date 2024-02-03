@@ -210,6 +210,7 @@ sources/0 = SubResource("TileSetAtlasSource_40afs")
 [node name="Army" parent="." instance=ExtResource("2_7f24q")]
 visible = true
 position = Vector2(-248, -99)
+color = Color(0.945098, 0.447059, 0.67451, 1)
 kingCode = 1
 armyCode = 1
 
