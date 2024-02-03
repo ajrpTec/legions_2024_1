@@ -4,6 +4,7 @@ class_name Soldier
 @export var soldier_physics : PackedScene; 
 @export var soldier_visual : PackedScene; 
 var soldierBody : Node2D;
+
 var kingCode = 0; var armyCode = 0;
 
 signal hit_enemy(body);

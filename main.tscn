@@ -208,22 +208,27 @@ sources/0 = SubResource("TileSetAtlasSource_40afs")
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Army" parent="." instance=ExtResource("2_7f24q")]
+visible = true
 position = Vector2(-248, -99)
 kingCode = 1
 armyCode = 1
 
 [node name="Army2" parent="." instance=ExtResource("2_7f24q")]
+visible = true
 user_control = false
 
 [node name="Army3" parent="." instance=ExtResource("2_7f24q")]
+visible = true
 position = Vector2(305, -175)
 user_control = false
 
 [node name="Army4" parent="." instance=ExtResource("2_7f24q")]
+visible = true
 position = Vector2(393, 177)
 user_control = false
 
 [node name="Army5" parent="." instance=ExtResource("2_7f24q")]
+visible = true
 position = Vector2(-403, 193)
 user_control = false
 

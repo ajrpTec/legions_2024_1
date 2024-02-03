@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cbfccoul7av7j" path="res://icon.svg" id="3_ifv33"]
 
 [node name="Army" type="Node2D"]
+visible = false
 script = ExtResource("1_i2v1a")
 SoldatScene = ExtResource("2_lcqr2")
 
